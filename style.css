@@ -1,0 +1,12 @@
+main {
+    display: flex;
+}
+article {
+    flex: 1;
+    border: 1px solid black;
+}
+img {
+    float: left;
+    margin: 20px;
+    width: 300px;
+}
