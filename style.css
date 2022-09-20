@@ -1,80 +1,35 @@
-* {
-    box-sizing: border-box;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
+html,
 body {
-    margin: 0;
-    background-image: url("https://media.istockphoto.com/vectors/abstract-simple-geometric-vector-seamless-pattern-with-gold-line-on-vector-id1160720443");
-    background-size: 100px;
+  font-family:sans-serif;
+  min-height: 100vh;
 }
-
-.wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header,
-article a {
-    background-color: rgb(147, 201, 65);
-}
-
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-header img {
-    height: 100px;
+header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 115%;
 }
-
-header ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-header ul li:not(:last-child) {
-    margin-right: 30px;
-}
-
 main {
-    background-color: white;
-    display: flex;
+  background-color: #1E1E1E;  
+  min-height: calc(100vh - 60px);
 }
-
-article:nth-child(odd) {
-    margin-right: 20px;
+.wrapper {
+  padding: 10px 20px;
 }
-
-article img {
-    float: left;
-    width: 150px;
-    margin: 0 20px 20px 0;
+.photo-group {
+  display: flex;
+  gap: 10px;
 }
-
-article nav {
-    display: flex;
-    justify-content: right;
-}
-
-article a {
-    color: white;
-    padding: 20px;
-}
-
-article p {
-    text-align: justify;
-}
-
-footer {
-    text-align: center;
-    
+.photo-pairs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

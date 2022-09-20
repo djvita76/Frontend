@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(4, 68, 63);
+}
+header,
+main{
+ color: white;
+ text-align: center;
+}
+span{
+    background-color: red;
+}
+label span{
+    background-color: inherit
+    font-size: 12px;
+}
+label,
+input,
+textarea{
+    margin: auto;
+    display: block;
+    outline: none;
+    resize: vertical;
+}
+section, 
+input[type="submit"]{
+    margin-top: 10px;
+}
+label,
+input[type="checkbox"],
+ input[type="checkbox"] + label{
+    display: inline;
+}
+input[type="submin"]{
+    background-color: green;
+    border-color: grey;
+}
+input[type="text"]:read-only{
+    background-color: rgb(111, 108, 108);
+}
+input:required{
+    border: 3px solid red;
+    border-left: 3px solid pink;
+}
+input[type="number"]:out-of-range,
+input:invalid {
+    border: 3px solid red;
+}
+input[type="number"]:in-range,
+input[:required]:valid {
+    
+}
+input:checked + label{
+    color: blue;
+}
+input[type="submit"]{
+    background-color: green;
+}
+
+
